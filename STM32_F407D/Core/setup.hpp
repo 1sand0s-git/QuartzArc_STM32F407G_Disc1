@@ -94,6 +94,15 @@ public:
 #define QAD_USERBUTTON_GPIO_PIN         GPIO_PIN_0   //A0
 
 
+//------------------------------------------
+//------------------------------------------
+//------------------------------------------
+
+//----------------------------
+//Interrupt Request Priorities
+
+#define QAD_IRQPRIORITY_EXTI     ((uint8_t) 0x0A) //Priority to be used by external interrupt handlers. Shared by all external interrupts
+
 
 //Prevent Recursive Inclusion
 #endif /* __SETUP_HPP */
