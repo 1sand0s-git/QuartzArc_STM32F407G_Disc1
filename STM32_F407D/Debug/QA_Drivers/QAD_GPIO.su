@@ -1,0 +1,23 @@
+QAD_GPIO.cpp:35:1:QAD_GPIO_Output::QAD_GPIO_Output(GPIO_TypeDef*, uint16_t)	24	static
+QAD_GPIO.cpp:57:1:QAD_GPIO_Output::QAD_GPIO_Output(GPIO_TypeDef*, uint16_t, QAD_GPIO_OutputMode, QAD_GPIO_PullMode, QAD_GPIO_Speed)	24	static
+QAD_GPIO.cpp:74:1:QAD_GPIO_Output::~QAD_GPIO_Output()	16	static
+QAD_GPIO.cpp:85:6:void QAD_GPIO_Output::on()	16	static
+QAD_GPIO.cpp:95:6:void QAD_GPIO_Output::off()	16	static
+QAD_GPIO.cpp:105:6:void QAD_GPIO_Output::toggle()	16	static
+QAD_GPIO.cpp:122:19:QAD_GPIO_PinState QAD_GPIO_Output::getState()	16	static
+QAD_GPIO.cpp:132:6:void QAD_GPIO_Output::setOutputMode(QAD_GPIO_OutputMode)	16	static
+QAD_GPIO.cpp:150:21:QAD_GPIO_OutputMode QAD_GPIO_Output::getOutputMode()	16	static
+QAD_GPIO.cpp:162:6:void QAD_GPIO_Output::setPullMode(QAD_GPIO_PullMode)	16	static
+QAD_GPIO.cpp:176:19:QAD_GPIO_PullMode QAD_GPIO_Output::getPullMode()	16	static
+QAD_GPIO.cpp:188:6:void QAD_GPIO_Output::setSpeed(QAD_GPIO_Speed)	16	static
+QAD_GPIO.cpp:202:16:QAD_GPIO_Speed QAD_GPIO_Output::getSpeed()	16	static
+QAD_GPIO.cpp:217:6:void QAD_GPIO_Output::periphInit()	40	static
+QAD_GPIO.cpp:232:6:void QAD_GPIO_Output::periphDeinit()	16	static
+QAD_GPIO.cpp:258:1:QAD_GPIO_Input::QAD_GPIO_Input(GPIO_TypeDef*, uint16_t)	24	static
+QAD_GPIO.cpp:275:1:QAD_GPIO_Input::QAD_GPIO_Input(GPIO_TypeDef*, uint16_t, QAD_GPIO_PullMode)	24	static
+QAD_GPIO.cpp:287:1:QAD_GPIO_Input::~QAD_GPIO_Input()	16	static
+QAD_GPIO.cpp:301:19:QAD_GPIO_PinState QAD_GPIO_Input::getState()	16	static
+QAD_GPIO.cpp:311:6:virtual void QAD_GPIO_Input::setPullMode(QAD_GPIO_PullMode)	16	static
+QAD_GPIO.cpp:325:19:QAD_GPIO_PullMode QAD_GPIO_Input::getPullMode()	16	static
+QAD_GPIO.cpp:341:6:void QAD_GPIO_Input::periphInit()	40	static
+QAD_GPIO.cpp:357:6:void QAD_GPIO_Input::periphDeinit()	16	static
