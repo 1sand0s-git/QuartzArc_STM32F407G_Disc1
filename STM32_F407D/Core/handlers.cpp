@@ -18,6 +18,18 @@
 //Includes
 #include "handlers.hpp"
 
+#include "QAD_GPIO.hpp"
+
+
+	//------------------------------------------
+	//------------------------------------------
+	//------------------------------------------
+
+extern QAD_GPIO_Output* GPIO_UserLED_Red;
+extern QAD_GPIO_Output* GPIO_UserLED_Orange;
+extern QAD_GPIO_Output* GPIO_UserLED_Green;
+extern QAD_GPIO_Output* GPIO_UserLED_Blue;
+
 
 	//------------------------------------------
 	//------------------------------------------
@@ -37,28 +49,44 @@ void NMI_Handler(void) {
 //HardFault_Handler
 //Exception Handler Function
 void HardFault_Handler(void) {
-
+  GPIO_UserLED_Red->on();
+  GPIO_UserLED_Orange->on();
+  GPIO_UserLED_Green->off();
+  GPIO_UserLED_Blue->off();
+  while(1) {}
 }
 
 
 //MemManage_Handler
 //Exception Handler Function
 void MemManage_Handler(void) {
-
+  GPIO_UserLED_Red->on();
+  GPIO_UserLED_Orange->on();
+  GPIO_UserLED_Green->off();
+  GPIO_UserLED_Blue->off();
+  while(1) {}
 }
 
 
 //BusFault_Handler
 //Exception Handler Function
 void BusFault_Handler(void) {
-
+  GPIO_UserLED_Red->on();
+  GPIO_UserLED_Orange->on();
+  GPIO_UserLED_Green->off();
+  GPIO_UserLED_Blue->off();
+  while(1) {}
 }
 
 
 //UsageFault_Handler
 //Exception Handler Function
 void UsageFault_Handler(void) {
-
+  GPIO_UserLED_Red->on();
+  GPIO_UserLED_Orange->on();
+  GPIO_UserLED_Green->off();
+  GPIO_UserLED_Blue->off();
+  while(1) {}
 }
 
 

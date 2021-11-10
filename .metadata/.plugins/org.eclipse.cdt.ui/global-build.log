@@ -130,3 +130,102 @@ Finished building: STM32_F407D.bin
  
 Finished building: STM32_F407D.list
  
+01:06:07 **** Build of configuration Debug for project STM32_F407D ****
+make -j8 all 
+arm-none-eabi-g++ "../QA_Drivers/QAD_EXTI.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Components/Common -I../Drivers/Components/cs43l22 -I../Core -I../QA_Drivers -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"QA_Drivers/QAD_EXTI.d" -MT"QA_Drivers/QAD_EXTI.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "QA_Drivers/QAD_EXTI.o"
+arm-none-eabi-g++ "../Core/handlers.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Components/Common -I../Drivers/Components/cs43l22 -I../Core -I../QA_Drivers -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/handlers.d" -MT"Core/handlers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/handlers.o"
+../Core/handlers.cpp:26:8: error: 'QAD_GPIO_Output' does not name a type
+   26 | extern QAD_GPIO_Output* GPIO_UserLED_Red;
+      |        ^~~~~~~~~~~~~~~
+../Core/handlers.cpp:27:8: error: 'QAD_GPIO_Output' does not name a type
+   27 | extern QAD_GPIO_Output* GPIO_UserLED_Orange;
+      |        ^~~~~~~~~~~~~~~
+../Core/handlers.cpp: In function 'void HardFault_Handler()':
+../Core/handlers.cpp:48:3: error: 'GPIO_UserLED_Red' was not declared in this scope
+   48 |   GPIO_UserLED_Red->on();
+      |   ^~~~~~~~~~~~~~~~
+../Core/handlers.cpp:49:3: error: 'GPIO_UsedLED_Orange' was not declared in this scope
+   49 |   GPIO_UsedLED_Orange->on();
+      |   ^~~~~~~~~~~~~~~~~~~
+../Core/handlers.cpp: In function 'void MemManage_Handler()':
+../Core/handlers.cpp:57:3: error: 'GPIO_UserLED_Red' was not declared in this scope
+   57 |   GPIO_UserLED_Red->on();
+      |   ^~~~~~~~~~~~~~~~
+../Core/handlers.cpp:58:3: error: 'GPIO_UsedLED_Orange' was not declared in this scope
+   58 |   GPIO_UsedLED_Orange->on();
+      |   ^~~~~~~~~~~~~~~~~~~
+../Core/handlers.cpp: In function 'void BusFault_Handler()':
+../Core/handlers.cpp:66:3: error: 'GPIO_UserLED_Red' was not declared in this scope
+   66 |   GPIO_UserLED_Red->on();
+      |   ^~~~~~~~~~~~~~~~
+../Core/handlers.cpp:67:3: error: 'GPIO_UsedLED_Orange' was not declared in this scope
+   67 |   GPIO_UsedLED_Orange->on();
+      |   ^~~~~~~~~~~~~~~~~~~
+../Core/handlers.cpp: In function 'void UsageFault_Handler()':
+../Core/handlers.cpp:75:3: error: 'GPIO_UserLED_Red' was not declared in this scope
+   75 |   GPIO_UserLED_Red->on();
+      |   ^~~~~~~~~~~~~~~~
+../Core/handlers.cpp:76:3: error: 'GPIO_UsedLED_Orange' was not declared in this scope
+   76 |   GPIO_UsedLED_Orange->on();
+      |   ^~~~~~~~~~~~~~~~~~~
+make: *** [Core/subdir.mk:38: Core/handlers.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+01:06:29 **** Incremental Build of configuration Debug for project STM32_F407D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/handlers.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Components/Common -I../Drivers/Components/cs43l22 -I../Core -I../QA_Drivers -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/handlers.d" -MT"Core/handlers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/handlers.o"
+../Core/handlers.cpp: In function 'void HardFault_Handler()':
+../Core/handlers.cpp:51:3: error: 'GPIO_UsedLED_Orange' was not declared in this scope; did you mean 'GPIO_UserLED_Orange'?
+   51 |   GPIO_UsedLED_Orange->on();
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   GPIO_UserLED_Orange
+../Core/handlers.cpp: In function 'void MemManage_Handler()':
+../Core/handlers.cpp:60:3: error: 'GPIO_UsedLED_Orange' was not declared in this scope; did you mean 'GPIO_UserLED_Orange'?
+   60 |   GPIO_UsedLED_Orange->on();
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   GPIO_UserLED_Orange
+../Core/handlers.cpp: In function 'void BusFault_Handler()':
+../Core/handlers.cpp:69:3: error: 'GPIO_UsedLED_Orange' was not declared in this scope; did you mean 'GPIO_UserLED_Orange'?
+   69 |   GPIO_UsedLED_Orange->on();
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   GPIO_UserLED_Orange
+../Core/handlers.cpp: In function 'void UsageFault_Handler()':
+../Core/handlers.cpp:78:3: error: 'GPIO_UsedLED_Orange' was not declared in this scope; did you mean 'GPIO_UserLED_Orange'?
+   78 |   GPIO_UsedLED_Orange->on();
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   GPIO_UserLED_Orange
+make: *** [Core/subdir.mk:38: Core/handlers.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+01:07:13 **** Incremental Build of configuration Debug for project STM32_F407D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/handlers.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Components/Common -I../Drivers/Components/cs43l22 -I../Core -I../QA_Drivers -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/handlers.d" -MT"Core/handlers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/handlers.o"
+arm-none-eabi-g++ -o "STM32_F407D.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F407GDISC1\QartzArc_STM32F407G_Disc1\STM32_F407D\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_F407D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32_F407D.elf
+ 
+arm-none-eabi-size   STM32_F407D.elf 
+arm-none-eabi-objdump -h -S  STM32_F407D.elf  > "STM32_F407D.list"
+arm-none-eabi-objcopy  -O binary  STM32_F407D.elf  "STM32_F407D.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7632	    120	   1616	   9368	   2498	STM32_F407D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32_F407D.bin
+ 
+Finished building: STM32_F407D.list
+ 
+01:12:06 **** Incremental Build of configuration Debug for project STM32_F407D ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/handlers.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Drivers/Components/Common -I../Drivers/Components/cs43l22 -I../Core -I../QA_Drivers -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -MMD -MP -MF"Core/handlers.d" -MT"Core/handlers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/handlers.o"
+arm-none-eabi-g++ -o "STM32_F407D.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F407GDISC1\QartzArc_STM32F407G_Disc1\STM32_F407D\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_F407D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: STM32_F407D.elf
+ 
+arm-none-eabi-size   STM32_F407D.elf 
+arm-none-eabi-objdump -h -S  STM32_F407D.elf  > "STM32_F407D.list"
+arm-none-eabi-objcopy  -O binary  STM32_F407D.elf  "STM32_F407D.bin"
+   text	   data	    bss	    dec	    hex	filename
+   7744	    120	   1616	   9480	   2508	STM32_F407D.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32_F407D.bin
+ 
+Finished building: STM32_F407D.list
+ 
