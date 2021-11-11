@@ -1,4 +1,4 @@
-# QartzArc_STM32F407G_Disc1
+# QuartzArc_STM32F407G_Disc1
 Quartz Arc codebase for STM32F407G Disc1 development boards
 
 This codebase is covered by Creative Commons CC-BY-NC-SA license as outlined below.
