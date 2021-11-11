@@ -64,6 +64,7 @@ QA_Result SystemInitialize(void) {
 	//Configure Oscillators
 	//
 	//Configure High Speed External (HSE) oscillator to be used, and setup primary PLL to provide a 168MHz clock
+	//NOTE: HSE Oscillator provided on STM32F407G-DISC1 board is an 8MHz clock signal provided by the ST-Link MCU's Master Clock Output
 	RCC_OscInitTypeDef RCC_OscInit = {0};
 	RCC_OscInit.OscillatorType = RCC_OSCILLATORTYPE_HSE; //Define which oscillator is to be configured
 	RCC_OscInit.HSEState       = RCC_HSE_BYPASS;         //Set High Speed External oscillator as system clock
@@ -93,10 +94,16 @@ QA_Result SystemInitialize(void) {
   		                          RCC_CLOCKTYPE_SYSCLK |
 																RCC_CLOCKTYPE_PCLK1 |
 																RCC_CLOCKTYPE_PCLK2;
+
   RCC_ClkInit.SYSCLKSource    = RCC_SYSCLKSOURCE_PLLCLK;  //Set primary PLL as system clock source
+
   RCC_ClkInit.AHBCLKDivider   = RCC_SYSCLK_DIV1;          //Set clock divider for host bus (AHB), DIV1 provides an AHB frequency of 168MHz
+
   RCC_ClkInit.APB1CLKDivider  = RCC_HCLK_DIV4;            //Set clock divider for peripheral bus 1 (APB1), DIV4 provides an APB1 frequency of 42MHz
+                                                          //NOTE: APB1 timer clocks are clock doubled, providing APB1 timers with 84MHz clocks
+
   RCC_ClkInit.APB2CLKDivider  = RCC_HCLK_DIV2;            //Set clock divider for peripheral bus 2 (APB2), DIV2 provides an APB2 frequency of 84MHz
+                                                          //NOTE: APB2 timer clocks are clock doubled, providing APB2 timers with 168MHz clocks
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInit, FLASH_LATENCY_5) != HAL_OK) {
   	return QA_Fail;

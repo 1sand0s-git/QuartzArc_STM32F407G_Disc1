@@ -67,7 +67,7 @@ int main(void) {
 
 	//----------------------------------
   //Initialize the User LEDs using the QAD_GPIO_Output driver class
-  //QAD_USERLED_**** definitions are defined in the setup.hpp
+  //QAD_USERLED_**** definitions are defined in setup.hpp
   GPIO_UserLED_Green  = new QAD_GPIO_Output(QAD_USERLED_GREEN_GPIO_PORT, QAD_USERLED_GREEN_GPIO_PIN);
 	GPIO_UserLED_Orange = new QAD_GPIO_Output(QAD_USERLED_ORANGE_GPIO_PORT, QAD_USERLED_ORANGE_GPIO_PIN);
 	GPIO_UserLED_Red    = new QAD_GPIO_Output(QAD_USERLED_RED_GPIO_PORT, QAD_USERLED_RED_GPIO_PIN);
