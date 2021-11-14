@@ -105,7 +105,8 @@ QA_Result SystemInitialize(void) {
   RCC_ClkInit.APB2CLKDivider  = RCC_HCLK_DIV2;            //Set clock divider for peripheral bus 2 (APB2), DIV2 provides an APB2 frequency of 84MHz
                                                           //NOTE: APB2 timer clocks are clock doubled, providing APB2 timers with 168MHz clocks
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInit, FLASH_LATENCY_5) != HAL_OK) {
+  if (HAL_RCC_ClockConfig(&RCC_ClkInit, FLASH_LATENCY_5) != HAL_OK) {  //Initialize system clocks using required values,
+  	                                                                   //and setting Flash Latenvy to 5 cycles
   	return QA_Fail;
   }
 

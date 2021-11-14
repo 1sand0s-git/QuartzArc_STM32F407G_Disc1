@@ -386,3 +386,63 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-11 08:44:26.872
 !MESSAGE Started RMI Server, listening on port 41340
+!SESSION 2021-11-11 23:54:40.845 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-11 23:55:00.808
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-11 23:55:00.879
+!MESSAGE Log4j initialized with config file C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F407GDISC1\QuartzArc_STM32F407G_Disc1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-11 23:55:06.550
+!MESSAGE Started RMI Server, listening on port 41338
+!SESSION 2021-11-12 06:22:03.277 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-12 06:22:13.121
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-12 06:22:13.159
+!MESSAGE Log4j initialized with config file C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F407GDISC1\QuartzArc_STM32F407G_Disc1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-12 06:22:18.370
+!MESSAGE Started RMI Server, listening on port 41338
+!SESSION 2021-11-13 12:12:36.144 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-13 12:12:49.554
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-13 12:12:49.617
+!MESSAGE Log4j initialized with config file C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F407GDISC1\QuartzArc_STM32F407G_Disc1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-13 12:12:55.882
+!MESSAGE Started RMI Server, listening on port 41339
+!SESSION 2021-11-14 13:05:54.705 -----------------------------------------------
+eclipse.buildId=Version 1.7.0
+java.version=11.0.10
+java.vendor=AdoptOpenJDK
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_AU
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2021-11-14 13:06:07.206
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2021-11-14 13:06:07.259
+!MESSAGE Log4j initialized with config file C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F407GDISC1\QuartzArc_STM32F407G_Disc1\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2021-11-14 13:06:13.462
+!MESSAGE Started RMI Server, listening on port 41341

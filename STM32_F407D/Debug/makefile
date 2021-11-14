@@ -79,8 +79,8 @@ all: main-build
 main-build: STM32_F407D.elf secondary-outputs
 
 # Tool invocations
-STM32_F407D.elf: $(OBJS) $(USER_OBJS) C:\Users\binar\Desktop\Quartz\ Arc\QA\ Codebase\ Repos\QA_STM32F407GDISC1\QartzArc_STM32F407G_Disc1\STM32_F407D\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-g++ -o "STM32_F407D.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F407GDISC1\QartzArc_STM32F407G_Disc1\STM32_F407D\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_F407D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+STM32_F407D.elf: $(OBJS) $(USER_OBJS) C:\Users\binar\Desktop\Quartz\ Arc\QA\ Codebase\ Repos\QA_STM32F407GDISC1\QuartzArc_STM32F407G_Disc1\STM32_F407D\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-g++ -o "STM32_F407D.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\binar\Desktop\Quartz Arc\QA Codebase Repos\QA_STM32F407GDISC1\QuartzArc_STM32F407G_Disc1\STM32_F407D\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_F407D.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
