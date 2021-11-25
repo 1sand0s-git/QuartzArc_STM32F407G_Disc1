@@ -47,8 +47,13 @@
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/Components/Common"/>
-									<listOptionValue builtIn="false" value="../Drivers/Coponents/cs43l22"/>
+									<listOptionValue builtIn="false" value="../Drivers/Components/cs43l22"/>
 									<listOptionValue builtIn="false" value="../Core"/>
+									<listOptionValue builtIn="false" value="../QA_Drivers"/>
+									<listOptionValue builtIn="false" value="../QA_Drivers/QAD_PeripheralManagers"/>
+									<listOptionValue builtIn="false" value="../QA_Systems"/>
+									<listOptionValue builtIn="false" value="../QA_Systems/QAS_Serial"/>
+									<listOptionValue builtIn="false" value="../QA_Tools"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.2075459432" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -69,6 +74,10 @@
 									<listOptionValue builtIn="false" value="../Drivers/Components/cs43l22"/>
 									<listOptionValue builtIn="false" value="../Core"/>
 									<listOptionValue builtIn="false" value="../QA_Drivers"/>
+									<listOptionValue builtIn="false" value="../QA_Drivers/QAD_PeripheralManagers"/>
+									<listOptionValue builtIn="false" value="../QA_Systems"/>
+									<listOptionValue builtIn="false" value="../QA_Systems/QAS_Serial"/>
+									<listOptionValue builtIn="false" value="../QA_Tools"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp.304074382" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp"/>
 							</tool>
@@ -94,6 +103,8 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="QA_Drivers"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="QA_Systems"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="QA_Tools"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -141,8 +152,13 @@
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/CMSIS/Include"/>
 									<listOptionValue builtIn="false" value="../Drivers/Components/Common"/>
-									<listOptionValue builtIn="false" value="../Drivers/Coponents/cs43l22"/>
+									<listOptionValue builtIn="false" value="../Drivers/Components/cs43l22"/>
 									<listOptionValue builtIn="false" value="../Core"/>
+									<listOptionValue builtIn="false" value="../QA_Drivers"/>
+									<listOptionValue builtIn="false" value="../QA_Drivers/QAD_PeripheralManagers"/>
+									<listOptionValue builtIn="false" value="../QA_Systems"/>
+									<listOptionValue builtIn="false" value="../QA_Systems/QAS_Serial"/>
+									<listOptionValue builtIn="false" value="../QA_Tools"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.1989264195" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
 							</tool>
@@ -162,6 +178,10 @@
 									<listOptionValue builtIn="false" value="../Drivers/Components/cs43l22"/>
 									<listOptionValue builtIn="false" value="../Core"/>
 									<listOptionValue builtIn="false" value="../QA_Drivers"/>
+									<listOptionValue builtIn="false" value="../QA_Drivers/QAD_PeripheralManagers"/>
+									<listOptionValue builtIn="false" value="../QA_Systems"/>
+									<listOptionValue builtIn="false" value="../QA_Systems/QAS_Serial"/>
+									<listOptionValue builtIn="false" value="../QA_Tools"/>
 								</option>
 								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp.197673086" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.input.cpp"/>
 							</tool>
@@ -187,6 +207,8 @@
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Core"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="Drivers"/>
 						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="QA_Drivers"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="QA_Systems"/>
+						<entry flags="VALUE_WORKSPACE_PATH" kind="sourcePath" name="QA_Tools"/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

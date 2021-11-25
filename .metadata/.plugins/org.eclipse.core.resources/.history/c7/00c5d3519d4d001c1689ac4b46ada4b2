@@ -1,0 +1,39 @@
+/* ----------------------------------------------------------------------- */
+/*                                                                         */
+/*   Quartz Arc                                                            */
+/*                                                                         */
+/*   STM32 F407G Discovery                                                 */
+/*                                                                         */
+/*   System: Systems - Serial                                              */
+/*   Role: Serial Device UART Class                                        */
+/*   Filename: QAS_Serial_Dev_UART.hpp                                     */
+/*   Date: 25th November 2021                                              */
+/*   Created By: Benjamin Rosser                                           */
+/*                                                                         */
+/*   This code is covered by Creative Commons CC-BY-NC-SA license          */
+/*   (C) Copyright 2021 Benjamin Rosser                                    */
+/*                                                                         */
+/* ----------------------------------------------------------------------- */
+
+//Prevent Recursive Inclusion
+#ifndef __QAS_SERIAL_DEV_UART_HPP_
+#define __QAS_SERIAL_DEV_UART_HPP_
+
+//Includes
+#include "setup.hpp"
+
+#include <memory>
+#include <string.h>
+
+#include "QAT_FIFO.hpp"
+#include "QAS_Serial_Dev_Base.hpp"
+#include "QAD_UART.hpp"
+
+
+	//------------------------------------------
+	//------------------------------------------
+  //------------------------------------------
+
+
+//Prevent Recursive Inclusion
+#endif /* __QAS_SERIAL_DEV_UART_HPP_ */

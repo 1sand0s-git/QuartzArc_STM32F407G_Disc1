@@ -1,0 +1,35 @@
+/* ----------------------------------------------------------------------- */
+/*                                                                         */
+/*   Quartz Arc                                                            */
+/*                                                                         */
+/*   STM32 F407G Discovery                                                 */
+/*                                                                         */
+/*   System: Tools                                                         */
+/*   Role: FIFO Buffer                                                     */
+/*   Filename: QAT_FIFO.hpp                                                */
+/*   Date: 25th November 2021                                              */
+/*   Created By: Benjamin Rosser                                           */
+/*                                                                         */
+/*   This code is covered by Creative Commons CC-BY-NC-SA license          */
+/*   (C) Copyright 2021 Benjamin Rosser                                    */
+/*                                                                         */
+/* ----------------------------------------------------------------------- */
+
+//Prevent Recursive Inclusion
+#ifndef __QAT_FIFO_HPP_
+#define __QAT_FIFO_HPP_
+
+//Includes
+#include "setup.hpp"
+
+
+	//------------------------------------------
+	//------------------------------------------
+  //------------------------------------------
+
+
+//Prevent Recursive Inclusion
+#endif /* __QAT_FIFO_HPP_ */
+
+
+

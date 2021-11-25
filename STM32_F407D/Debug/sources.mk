@@ -36,4 +36,7 @@ Drivers/Components/cs43l22 \
 Drivers/STM32F4xx_HAL_Driver/Src/Legacy \
 Drivers/STM32F4xx_HAL_Driver/Src \
 QA_Drivers \
+QA_Drivers/QAD_PeripheralManagers \
+QA_Systems/QAS_Serial \
+QA_Tools \
 
